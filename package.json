@@ -1,0 +1,25 @@
+{
+  "name": "laba1html",
+  "version": "1.0.0",
+  "description": "labaforpolitech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Legamanchik/labapolitech.git"
+  },
+  "author": "PAVLO KRAVETS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Legamanchik/labapolitech/issues"
+  },
+  "homepage": "https://github.com/Legamanchik/labapolitech#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}

@@ -3,7 +3,7 @@
 }
 
 #navbar {
-  background-color: #333333;
+  background-color: #2c2c2c;
   color: #858585;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,6 +111,19 @@
   height: 35px;
 }
 
+#side {
+  background-color: #373737;
+}
 #side i {
   text-decoration: none;
+}
+#side .sidemenu {
+  width: 200px;
+  height: 100px;
+  display: table;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f6f6f6;
+  text-align: center;
 }

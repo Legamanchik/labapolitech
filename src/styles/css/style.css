@@ -1,0 +1,116 @@
+#main {
+  height: 100vh;
+}
+
+#navbar {
+  background-color: #333333;
+  color: #858585;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#navbar .navbar-nar a {
+  color: white;
+}
+#navbar #mono {
+  color: white;
+}
+#navbar #web {
+  color: #858585;
+}
+#navbar #navleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 45%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#navbar #navleft #ssnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+#navbar #navleft .monoweb {
+  margin-left: 5px;
+}
+#navbar #navleft .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-spacing: 3px;
+}
+#navbar #navleft p {
+  margin: 0 5px;
+  font-size: 14px;
+}
+#navbar #rsnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#navbar #rsnav #mainmenu {
+  background-color: #363636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-radius: 15px;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+}
+#navbar #rsnav #mainmenu a {
+  color: white;
+  text-decoration: none;
+}
+#navbar #rsnav #searchhello {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#navbar #rsnav #searchhello .hello {
+  font-size: 14px;
+}
+#navbar #rsnav #searchhello .search {
+  width: 69px;
+  height: 30px;
+}
+#navbar #rsnav #searchhello .search .photo {
+  width: 35px;
+  height: 35px;
+}
+
+#side i {
+  text-decoration: none;
+}

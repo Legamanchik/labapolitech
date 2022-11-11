@@ -1,5 +1,6 @@
-#main{
-    height: 100vh;
+body {
+    padding: 0px;
+    margin: 0px;
 }
 
 #navbar{
@@ -51,8 +52,9 @@
     #rsnav {
         display: flex;
         flex-wrap: nowrap;
-        width: 50%;
         align-items:center;
+        justify-content: space-between;
+        width: 700px;
         #mainmenu{
             background-color: #363636;
             display: flex;
@@ -71,8 +73,12 @@
         
         #searchhello{
             display: flex;
+            width: 200px;
+            flex-wrap: nowrap;
+
             .hello{
                     font-size: 14px;
+                    align-items:center;
             }
             .search{
                 width:69px;
@@ -87,8 +93,14 @@
     }
 }
 #side{
-
+    height: auto;
+    width: 200px;
     background-color: #373737;
+    display: flex;
+    flex-wrap: nowrap;
+    .bottom{
+        margin-top: 1000px;
+    }
     i{
         text-decoration: none;
     }
@@ -99,6 +111,86 @@
         justify-content: center;
         color: #f6f6f6;
         text-align: center;
+        margin-top: 20px;
 
     }
+}
+#centermenu{
+    width: 100vw;
+    background-color: #f3f3f3;
+    
+}
+#mainpage{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    .divcards{
+        display:flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+        .cards{
+            margin-top: 50px;
+            color: white;
+            padding: 36px;
+            border-radius:25px;
+            width: 310px;
+            height: 180px;
+            background-color:#333333;
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            .firstsectioncards{
+                width: 250px;
+                display: flex;
+                justify-content: space-between;
+                .moneysection{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 50%;
+                    h2{
+                        padding-top: 4px;
+                        font-size: 14px;
+                        color:#cccccc;
+                        padding-top: 5px;
+                    }
+                    p{
+                        font-size: 18px;
+                        color:white;
+                    }
+                }
+
+            }
+            .secondsectioncards{
+                width: 100vw;
+                display: flex;
+                p{
+                    font-size: 18px;
+                    word-spacing: 15px;
+                }
+            }
+            .thirdsectioncards{
+                display: flex;
+                justify-content: space-between;
+                width: 100vw;
+            }
+        }
+    }
+    .leftinfo{
+        .block{
+            height: 500px;
+            width: 725px;
+            background-color:white;
+            border-radius: 20px;
+            margin:90px;
+        }
+    }
+    
+
+        .transactions{ 
+            background-color:white;
+            border-radius: 20px;
+            margin: 90px;
+            height: 1000px;
+        }
 }

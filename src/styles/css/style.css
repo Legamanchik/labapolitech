@@ -1,5 +1,6 @@
-#main {
-  height: 100vh;
+body {
+  padding: 0px;
+  margin: 0px;
 }
 
 #navbar {
@@ -71,10 +72,13 @@
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 700px;
 }
 #navbar #rsnav #mainmenu {
   background-color: #363636;
@@ -98,9 +102,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 200px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 #navbar #rsnav #searchhello .hello {
   font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #navbar #rsnav #searchhello .search {
   width: 69px;
@@ -112,7 +122,17 @@
 }
 
 #side {
+  height: auto;
+  width: 200px;
   background-color: #373737;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+#side .bottom {
+  margin-top: 1000px;
 }
 #side i {
   text-decoration: none;
@@ -126,4 +146,105 @@
           justify-content: center;
   color: #f6f6f6;
   text-align: center;
+  margin-top: 20px;
+}
+
+#centermenu {
+  width: 100vw;
+  background-color: #f3f3f3;
+}
+
+#mainpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: auto;
+}
+#mainpage .divcards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#mainpage .divcards .cards {
+  margin-top: 50px;
+  color: white;
+  padding: 36px;
+  border-radius: 25px;
+  width: 310px;
+  height: 180px;
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#mainpage .divcards .cards .firstsectioncards {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#mainpage .divcards .cards .firstsectioncards .moneysection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+#mainpage .divcards .cards .firstsectioncards .moneysection h2 {
+  padding-top: 4px;
+  font-size: 14px;
+  color: #cccccc;
+  padding-top: 5px;
+}
+#mainpage .divcards .cards .firstsectioncards .moneysection p {
+  font-size: 18px;
+  color: white;
+}
+#mainpage .divcards .cards .secondsectioncards {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#mainpage .divcards .cards .secondsectioncards p {
+  font-size: 18px;
+  word-spacing: 15px;
+}
+#mainpage .divcards .cards .thirdsectioncards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+}
+#mainpage .leftinfo .block {
+  height: 500px;
+  width: 725px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 90px;
+}
+#mainpage .transactions {
+  background-color: white;
+  border-radius: 20px;
+  margin: 90px;
+  height: 1000px;
 }

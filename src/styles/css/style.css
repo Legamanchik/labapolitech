@@ -132,7 +132,7 @@ body {
       flex-wrap: nowrap;
 }
 #side .bottom {
-  margin-top: 1000px;
+  margin-top: 300%;
 }
 #side i {
   text-decoration: none;
@@ -235,16 +235,50 @@ body {
           justify-content: space-between;
   width: 100vw;
 }
-#mainpage .leftinfo .block {
-  height: 500px;
-  width: 725px;
+#mainpage #maininfo {
+  height: 100vh;
+  width: 100%;
   background-color: white;
-  border-radius: 20px;
-  margin: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
-#mainpage .transactions {
-  background-color: white;
+#mainpage #statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#mainpage #statistic #statbott {
+  min-width: 300px;
+  min-height: 500px;
+  height: 600px;
+  background-color: pink;
   border-radius: 20px;
-  margin: 90px;
-  height: 1000px;
+  margin: 45px;
+}
+#mainpage #statistic #stattop {
+  min-width: 300px;
+  min-height: 500px;
+  height: 600;
+  background-color: orange;
+  border-radius: 20px;
+  margin: 45px;
+}
+#mainpage #transactions {
+  min-width: 300px;
+  max-width: 700px;
+  height: 1090px;
+  background-color: blue;
+  border-radius: 20px;
+  margin: 45px 0px 45px 45px;
 }

@@ -89,9 +89,9 @@
                 </div>
             </div>
 
-            <div id="centermenu">
-                <div class="divcards">
-                    <div class="cards">
+            <div id="centermenu" class="container-fluid">
+                <div id="divcards" class="row md-8 sm-4">
+                    <div id="cards" class="row md-2 sm-1">
                         <div class="firstsectioncards">
                             <div class="moneysection">
                             <p>150 000</p>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
 
-                    <div class="cards">
+                    <div id="cards" class="row md-2 sm-1">
                         <div class="firstsectioncards">
                             <div class="moneysection">
                             <p>12 180</p>
@@ -126,7 +126,7 @@
                     </div>
 
 
-                    <div class="cards">
+                    <div id="cards" class="row md-2 sm-1">
                         <div class="firstsectioncards">
                             <div class="moneysection">
                             <p>8 305</p>
@@ -147,7 +147,7 @@
               
 
 
-                    <div class="cards">
+                    <div id="cards" class="row md-2 sm-1">
                         <div class="firstsectioncards">
                             <div class="moneysection">
                             <p>2.023171</p>
@@ -173,14 +173,301 @@
                         <div class="col-md-6">
                             <div id="statistic" class="row">
                                 <div id="stattop" class="col md-6 sm-4">
+                                    <div class="left_top">
+                                        <div style="font-size:16px; font-weight:bold; width:200px">Balance summary</div>
+                                        <div class="date_settings">
+                                            <div style="font-size:16px; color:grey;"><a> Week </a></div>
+                                            <div style="font-size:16px; color:grey;"><a> Month </a></div>
+                                            <div style="font-size:16px; color:grey;"><a> Year </a></div>
+                                            <div style="font-size:16px; color:grey;"><a> Other </a></div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div id="statbott" class="col md-6 sm-4">
-                                </div>
+                                    <div class="left_top">
+                                        <div style="font-size:16px; font-weight:bold; width:200px">Expense categories</div>
+                                        <div class="date_settings">
+                                            <div style="font-size:16px; color:grey;"><a> Week </a></div>
+                                            <div style="font-size:16px; color:grey;"><a> Month </a></div>
+                                            <div style="font-size:16px; color:grey;"><a> Year </a></div>
+                                            <div style="font-size:16px; color:grey;"><a> Other </a></div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="categories">
+                                        
+                                        <div class="category">
+                                            <img src="./img/pudra.png" style="height: 20px; width: 20px;">
+                                            <p style="font-weight:bold;font-size:16px;width:35px;">25%</p>
+                                            <p style="color: grey; font-size:14px; width:140px;">Vechicle and transport</p>
+                                        </div>
+                                        <div class="category">
+                                            <img src="./img/pink.png" style="height: 20px; width: 20px;">
+                                            <p style="font-weight:bold;font-size:16px;width:35px;">23%</p>
+                                            <p style="color: grey; font-size:14px; width:140px;">Groceries and food</p>
+                                        </div>
+                                        <div class="category">
+                                            <img src="./img/black.png" style="height: 20px; width: 20px;">
+                                            <p style="font-weight:bold;font-size:16px;width:35px;">18%</p>
+                                            <p style="color: grey; font-size:14px; width:140px;">Clothes and shoes</p>
+                                        </div>
+                                        <div class="category">
+                                            <img src="./img/purple.png" style="height: 20px; width: 20px;">
+                                            <p style="font-weight:bold;font-size:16px;width:35px;">16%</p>
+                                            <p style="color: grey; font-size:14px; width:140px;">Cafe and restaurants</p>
+                                        </div>
+                                        <div class="category">
+                                            <img src="./img/blue.png" style="height: 20px; width: 20px;">
+                                            <p style="font-weight:bold;font-size:16px;width:35px;">15%</p>
+                                            <p style="color: grey; font-size:14px; width:140px;">Mobile and internet</p>
+                                        </div>
+                                        <div class="category">
+                                            <img src="./img/yellow.png" style="height: 20px; width: 20px;">
+                                            <p style="font-weight:bold;font-size:16px;width:35px;">10%</p>
+                                            <p style="color: grey; font-size:14px; width:140px;">House and services</p>
+                                        </div>
+                                        <div class="category">
+                                            <img src="./img/green.png" style="height: 20px; width: 20px;">
+                                            <p style="font-weight:bold;font-size:16px; width:35px;">9%</p>
+                                            <p style="color: grey; font-size:14px; width:140px;">Other expenses</p>
+                                        </div>
+                                    </div>
+                                    <div style="width: 300px;">
+                                        <canvas id="graph"></canvas>
+                                    </div>
+                                </div>    
                             </div>
                         </div>
-                        <div id="transactions" class="col md-6 sm-4">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div id="transactions" class="col md-6 sm-4">
+                            <div class="toptransactions">
+                                <div style=" width: 200px;font-size:16px; font-weight:bold;">Transaction history</div>
+                                <div class="transactions_settings">
+                                    <div style="font-size:14px; color:grey;"> Any currency </div>
+                                    <div style="font-size:14px; color:grey;"> All categories </div>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <p>December 31</p>
+                                <div class="date_transactions">
+                                    <div class="tran">
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+
+
+
+                            </div>
+                            <div class="date">
+                                <p>December 31</p>
+                                <div class="date_transactions">
+                                    <div class="tran">
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers" style="color:lime;"> 480 </div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+
+
+
+                            </div>
+                            <div class="date">
+                                <p>December 31</p>
+                                <div class="date_transactions">
+                                    <div class="tran">
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+
+
+
+                            </div>
+                            <div class="date">
+                                <p>December 31</p>
+                                <div class="date_transactions">
+                                    <div class="tran">
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                        <div class="tran_info">
+                                            <div class="tran_left">
+                                                <img src="./img/man.png" style="height:40px;width:40px; border-radius:25px; margin-right:0.5%">
+                                                <div class="transer">
+                                                    <div style="font-size:14px; font-weight:500; color:black; margin-bottom:0px"> Transfer from <a href="#">Alexey</a></a></div>
+                                                    <div style="font-size:12px;color:grey;"> Transactions To card: ** 3478</div>
+                                                </div>
+                                            </div>
+                                            <div class="money_tran">
+                                                <div class="tran_numbers"> - 480</div>
+                                                <div class="tran_currency"> UAH</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+
+
+
+                            </div>
+                            
                         </div>
+                        
                 </div>
             </div>
 
@@ -200,9 +487,11 @@
 
 
 
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/main.min.js"></script>
 </body>
 </html>

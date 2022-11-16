@@ -99,7 +99,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     .bottom{
-        margin-top: 300%;
+        margin-top: 350%;
     }
     i{
         text-decoration: none;
@@ -122,26 +122,28 @@ body {
 }
 #mainpage{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: auto;
-    .divcards{
+    #divcards{
         display:flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
         
-        .cards{
-            margin-top: 50px;
+        #cards{
+            margin: 2%;
             color: white;
-            padding: 36px;
+            padding: 2%;
             border-radius:25px;
-            width: 310px;
-            height: 180px;
+            min-width: 250px;
+            max-width: 310px;
+            //height: 180px;
             background-color:#333333;
             display: flex;
             justify-content: start;
             flex-wrap: wrap;
             .firstsectioncards{
-                width: 250px;
+                max-width: 250px;
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 .moneysection{
@@ -162,7 +164,7 @@ body {
 
             }
             .secondsectioncards{
-                width: 100vw;
+                width: 100%;
                 display: flex;
                 p{
                     font-size: 18px;
@@ -172,14 +174,13 @@ body {
             .thirdsectioncards{
                 display: flex;
                 justify-content: space-between;
-                width: 100vw;
+                width: 100%;
             }
         }
     }
     #maininfo{
         height: 100vh;
         width: 100%;
-        background-color:white;
         display: flex;
         flex-wrap: nowrap;
 
@@ -193,27 +194,120 @@ body {
             min-width: 300px;
             min-height: 500px;
             height: 600px;
-            background-color:pink;
+            background-color:white;
             border-radius: 20px;
             margin: 45px;
+            display: flex;
+            flex-wrap: wrap;
+                    .categories{
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    .category{
+                        height: 50px;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: space-evenly;
+                        width: 70%;
+                    }
+                }
+            .left_top{
+                display: flex;
+                margin: 4%;
+                height: 50px;
+                width: 100%;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+
+                .date_settings{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 300px;
+                }
+            }
+
         }
         #stattop{
             min-width: 300px;
             min-height: 500px;
             height: 600;
-            background-color:orange;
+            background-color:white;
             border-radius: 20px;
             margin: 45px;
+            display: flex;
+            .left_top{
+                display: flex;
+                margin: 4%;
+                height: 50px;
+                width: 100%;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                .date_settings{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 300px;
+                }
+            }
+            
         }
     }
     
 
-        #transactions{ 
+        
+
+    #transactions{ 
             min-width: 300px;
-            max-width: 700px;
+            max-width: 750px;
             height: 1090px;
-            background-color:blue;
+            background-color:white;
             border-radius: 20px;
             margin: 45px 0px 45px 45px;
-        }
+            .toptransactions{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                margin: 4%;
+                height: 50px;
+                align-items:center;
+                border-bottom: 0.5px solid #f2f2f2;
+                .transactions_settings{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 30%;
+
+                }
+            }
+            .date{
+                margin: 4%;
+                p{
+                    font-size: 14px;
+                    color: grey;
+                }
+                .tran_info{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                }
+                .tran_left{
+                    display: flex;
+                    width: 50%;
+                    height: 50px;
+                    
+                }
+                .money_tran{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items:center;
+                }
+                .tran_currency{
+                    color:grey;
+                    font-size: 14px;
+                }
+                .tran_numbers{
+                    color:black;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+            }
+    }
 }

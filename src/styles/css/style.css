@@ -132,7 +132,7 @@ body {
       flex-wrap: nowrap;
 }
 #side .bottom {
-  margin-top: 300%;
+  margin-top: 350%;
 }
 #side i {
   text-decoration: none;
@@ -158,10 +158,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
-#mainpage .divcards {
+#mainpage #divcards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,13 +171,13 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-#mainpage .divcards .cards {
-  margin-top: 50px;
+#mainpage #divcards #cards {
+  margin: 2%;
   color: white;
-  padding: 36px;
+  padding: 2%;
   border-radius: 25px;
-  width: 310px;
-  height: 180px;
+  min-width: 250px;
+  max-width: 310px;
   background-color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,8 +188,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-#mainpage .divcards .cards .firstsectioncards {
-  width: 250px;
+#mainpage #divcards #cards .firstsectioncards {
+  max-width: 250px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +198,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-#mainpage .divcards .cards .firstsectioncards .moneysection {
+#mainpage #divcards #cards .firstsectioncards .moneysection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,39 +207,38 @@ body {
           justify-content: space-between;
   width: 50%;
 }
-#mainpage .divcards .cards .firstsectioncards .moneysection h2 {
+#mainpage #divcards #cards .firstsectioncards .moneysection h2 {
   padding-top: 4px;
   font-size: 14px;
   color: #cccccc;
   padding-top: 5px;
 }
-#mainpage .divcards .cards .firstsectioncards .moneysection p {
+#mainpage #divcards #cards .firstsectioncards .moneysection p {
   font-size: 18px;
   color: white;
 }
-#mainpage .divcards .cards .secondsectioncards {
-  width: 100vw;
+#mainpage #divcards #cards .secondsectioncards {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-#mainpage .divcards .cards .secondsectioncards p {
+#mainpage #divcards #cards .secondsectioncards p {
   font-size: 18px;
   word-spacing: 15px;
 }
-#mainpage .divcards .cards .thirdsectioncards {
+#mainpage #divcards #cards .thirdsectioncards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100vw;
+  width: 100%;
 }
 #mainpage #maininfo {
   height: 100vh;
   width: 100%;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,23 +262,164 @@ body {
   min-width: 300px;
   min-height: 500px;
   height: 600px;
-  background-color: pink;
+  background-color: white;
   border-radius: 20px;
   margin: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#mainpage #statistic #statbott .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+#mainpage #statistic #statbott .categories .category {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+}
+#mainpage #statistic #statbott .left_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4%;
+  height: 50px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+#mainpage #statistic #statbott .left_top .date_settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
 }
 #mainpage #statistic #stattop {
   min-width: 300px;
   min-height: 500px;
   height: 600;
-  background-color: orange;
+  background-color: white;
   border-radius: 20px;
   margin: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#mainpage #statistic #stattop .left_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4%;
+  height: 50px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+#mainpage #statistic #stattop .left_top .date_settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
 }
 #mainpage #transactions {
   min-width: 300px;
-  max-width: 700px;
+  max-width: 750px;
   height: 1090px;
-  background-color: blue;
+  background-color: white;
   border-radius: 20px;
   margin: 45px 0px 45px 45px;
+}
+#mainpage #transactions .toptransactions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 4%;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.5px solid #f2f2f2;
+}
+#mainpage #transactions .toptransactions .transactions_settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+#mainpage #transactions .date {
+  margin: 4%;
+}
+#mainpage #transactions .date p {
+  font-size: 14px;
+  color: grey;
+}
+#mainpage #transactions .date .tran_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+#mainpage #transactions .date .tran_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 50px;
+}
+#mainpage #transactions .date .money_tran {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#mainpage #transactions .date .tran_currency {
+  color: grey;
+  font-size: 14px;
+}
+#mainpage #transactions .date .tran_numbers {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
 }

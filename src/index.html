@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="/styles/css/style.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity=
+                    "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+    </script>
     <title></title>
 </head>
 <body>
@@ -40,12 +45,12 @@
                     <a class="nav-item nav-link" href="#">REPLENISH CARD</a>
                 </div>
                 <div id="searchhello">
-                    <div class="hello">
-                        <p>Hello, Nik!</p>
+                    <div class="hello" style="display: flex; align-items:center">
+                        <div>Hello, Nik!</div>
                     </div>
-                    <div class="search">
-                        <a href="#"><img src="./img/lupa.png" style="height: 17px; width: 17px;"></a>
-                        <img class="photo" scr="./img/pearson2.png">
+                    <div class="search" >
+                        <a href="#"><img src="./img/lupa.png" style="height: 17px; width: 17px;margin:8px;"></a>
+                        <img src="./img/man2.png" style="height: 35px; width: 35px; border-radius:20px;" >
                     </div>
                 </div>
         </div>
@@ -182,7 +187,27 @@
                                             <div style="font-size:16px; color:grey;"><a> Other </a></div>
                                         </div>
                                     </div>
+                                    <div  style="height: 300px; width:775px;">
+                                    <canvas id="myChart" width="775" height="300" ></canvas>
+                                    </div>
+                                    <div class="balance">
+                                        <div style="display: flex; width:300px; justify-content:space-evenly">
+                                            <div style="margin-right: 1%;">
+                                                <p style="font-size: 20px; font-weight:500">Total balance :</p>
+                                            </div>
+                                            <div style="display: flex;">
+                                                <p style="font-size: 20px; font-weight:500;">29 480</p>
+                                                <p style="font-size: 20px; font-weight:500; margin-left:5px"> USD </p>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
                                 </div>
+
+
+
+
+                                
                                 <div id="statbott" class="col md-6 sm-4">
                                     <div class="left_top">
                                         <div style="font-size:16px; font-weight:bold; width:200px">Expense categories</div>
@@ -232,8 +257,9 @@
                                             <p style="color: grey; font-size:14px; width:140px;">Other expenses</p>
                                         </div>
                                     </div>
-                                    <div style="width: 300px;">
+                                    <div style="width: 250px; ">
                                         <canvas id="graph"></canvas>
+                                        <h1 style="position:absolute;font-weight: bold;color:black;margin-left:60px;z-index:2; top:240px;font-size:24px">- 6 567 USD</h1>
                                     </div>
                                 </div>    
                             </div>
@@ -486,12 +512,12 @@
 
 
 
-
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/main.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="./js/main.min.js"></script>
+   
 </body>
 </html>

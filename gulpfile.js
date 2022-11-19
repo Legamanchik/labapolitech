@@ -24,7 +24,7 @@ const del = require('del')
 // Пути исходных файлов src и пути к результирующим файлам dest
 const paths = {
   html: {
-    src: ['src/*.html', 'src/*.pug'],
+    src: ['src/*.html', 'src/*.pug', 'src/*.json'],
     dest: 'public/'
   },
   styles: {

@@ -47,6 +47,7 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-align: center;
+  width: 300px;
 }
 #navbar #navleft .monoweb {
   margin-left: 5px;
@@ -63,7 +64,6 @@ body {
   word-spacing: 3px;
 }
 #navbar #navleft p {
-  margin: 0 5px;
   font-size: 14px;
 }
 #navbar #rsnav {
@@ -102,23 +102,28 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
+  width: 150px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 #navbar #rsnav #searchhello .hello {
   font-size: 14px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 30px;
 }
 #navbar #rsnav #searchhello .search {
   width: 69px;
   height: 30px;
-}
-#navbar #rsnav #searchhello .search .photo {
-  width: 35px;
-  height: 35px;
+  background-color: #363636;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #side {
@@ -271,6 +276,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+#mainpage #statistic #statbott .doughnut-wrapper {
+  margin-left: auto;
+  margin-right: 0;
+  width: 250px;
+  height: 250px;
+}
 #mainpage #statistic #statbott .categories {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +336,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 #mainpage #statistic #stattop .left_top {
   display: -webkit-box;
@@ -347,6 +360,15 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 300px;
+}
+#mainpage #statistic #stattop .balance {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 #mainpage #transactions {
   min-width: 300px;

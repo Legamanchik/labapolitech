@@ -33,6 +33,7 @@ body {
             align-items:center;
             justify-content: space-evenly;
             text-align: center;
+            width: 300px;
         }
         .monoweb{
             margin-left: 5px;
@@ -45,7 +46,6 @@ body {
             word-spacing: 3px;
         }
         p{
-            margin:0 5px;
             font-size: 14px;
         }
     }
@@ -73,21 +73,20 @@ body {
         
         #searchhello{
             display: flex;
-            width: 200px;
+            width: 150px;
             flex-wrap: nowrap;
-
+            justify-content: space-between;
             .hello{
                     font-size: 14px;
-                    align-items:center;
+                    height: 30px;
             }
             .search{
                 width:69px;
                 height: 30px;
-                        
-                .photo{
-                width: 35px;
-                height: 35px;
-                }
+                background-color: #363636;
+                border-radius:30px;
+                display: flex;
+                justify-content: space-between;       
             }
         }
     }
@@ -118,6 +117,7 @@ body {
 #centermenu{
     width: 100vw;
     background-color: #f3f3f3;
+
     
 }
 #mainpage{
@@ -199,6 +199,13 @@ body {
             margin: 45px;
             display: flex;
             flex-wrap: wrap;
+            .doughnut-wrapper {
+                margin-left: auto;
+                margin-right: 0;
+        
+                width: 250px;
+                height: 250px;
+              }
                     .categories{
                     display: flex;
                     flex-direction: column;
@@ -235,6 +242,7 @@ body {
             border-radius: 20px;
             margin: 45px;
             display: flex;
+            flex-wrap: wrap;
             .left_top{
                 display: flex;
                 margin: 4%;
@@ -247,6 +255,11 @@ body {
                     justify-content: space-between;
                     width: 300px;
                 }
+            }
+            .balance{
+                width: 100%;
+                display: flex;
+                justify-content: end;
             }
             
         }
